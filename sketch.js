@@ -32,6 +32,11 @@ function draw() {
 	fill(c);
 	// random rect
 	rect(minute(), second(), day()+hour(), month()+hour());
+
+	textSize(20);
+	fill(255,255,255);
+	noStroke();
+	text(hour()+":"+minute()+":"+second(), 10, windowHeight-10);
 }
 
 
