@@ -1,27 +1,4 @@
 var lastSecond;
-var c;
-var d;
-var e;
-var x;
-var y;
-
-function getRandomColor() {
-	var r = random(0,255);
-	var g = random(0,255);
-	var b = random(0,255);
-
-	return color(
-		floor(r),
-		floor(g),
-		floor(b)
-	);
-};
-
-function getRandomLocation() {
-  var c = random(x,y);
-  var d = random(x,y);
-  var e = random(x,y);
-};
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -34,9 +11,6 @@ function draw() {
 
 	if(lastSecond !== second()) {
 		lastSecond = second();
-    c = getRandomColor();
-    d = getRandomColor();
-    e = getRandomColor();
     }
 
   for (var i = 0; i < hour(); i++){
