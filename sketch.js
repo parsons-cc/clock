@@ -1,6 +1,9 @@
 var lastSecond;
 var c;
-
+var d;
+var e;
+var x;
+var y;
 
 function getRandomColor() {
 	var r = random(0,255);
@@ -14,35 +17,50 @@ function getRandomColor() {
 	);
 };
 
+function getRandomLocation() {
+  var c = random(x,y);
+  var d = random(x,y);
+  var e = random(x,y);
+};
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	lastSecond = second();
-	c = getRandomColor();
+  noStroke();
 }
 
 function draw() {
-	background(0,0,0);
+	background(255,255,255);
 
 	if(lastSecond !== second()) {
 		lastSecond = second();
-		c = getRandomColor();
-	}
+    c = getRandomColor();
+    d = getRandomColor();
+    e = getRandomColor();
+    }
 
-	fill(c);
-	// random rect
-	rect(minute(), second(), day()+hour(), month()+hour());
+  for (var i = 0; i < hour(); i++){
+    fill(0);
+    rect(i + 60, i + 30, 80, 80);
+  };
 
-	textSize(20);
-	fill(255,255,255);
+  for (var i = 0; i < minute(); i++){
+    fill(0);
+    rect(i + 60, i + 200, 80, 80);
+  };
+
+  for (var i = 0; i < second(); i++){
+    fill(0);
+    rect(i + 60, i + 390, 80, 80);
+  };
+
+
+	textSize(70);
+	fill(0,0,0);
 	noStroke();
-	text(hour()+":"+minute()+":"+second(), 10, windowHeight-10);
-}
-
-
-function mousePressed() {
-	var isFullscreen = fullscreen();
-	fullscreen(!isFullscreen);
+	text(hour()+"", 100, windowHeight-460, fill(0));
+  text(minute()+"",100, windowHeight-280, fill(0));
+  text(second()+"",100, windowHeight-65, fill(0));
 }
 
 
