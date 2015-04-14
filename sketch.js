@@ -53,13 +53,13 @@ function draw() {
   text(minute()+"",100, windowHeight-280, fill(0));
   text(second()+"",100, windowHeight-65, fill(0));
 
-	function getRandomPosition(element) {
+	/*function getRandomPosition(element) {
 		var x = document.body.offsetHeight-element.windowHeight;
 		var y = document.body.offsetWidth-element.windowWidth;
 		var randomX = Math.floor(Math.random()*x);
 		var randomY = Math.floor(Math.random()*y);
 		return [randomX,randomY];
-	}
+	}*/
 
 	/*if(lastMillis !== millis()){
 		lastMillis = millis();
