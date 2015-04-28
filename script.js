@@ -1,78 +1,90 @@
-/**
- * Here's where our JavaScript goes
- */
-
-// We still define our variables here
 var lastSecond;
-var c;
+var hourCount;
+var minuteCount;
+var secondCount;
 
-/**
- * We're using the p5 "instance mode" for this new structure
- * http://p5js.org/learn/examples/Instance_Mode_Instantiation.php
- * So that we can use the function attribute `sketch` to access p5 functions
- */
-var mySketch = new p5(function(sketch) {
+function setup() {
+	createCanvas(windowWidth, windowHeight);
+	lastSecond = second();
+  noStroke();
+
+}
+
+function draw() {
+
+	background(255,255,255);
 
 
-	function getRandomColor() {
-		var r = sketch.random(0,255);
-		var g = sketch.random(0,255);
-		var b = sketch.random(0,255);
 
-		return sketch.color(
-			sketch.floor(r),
-			sketch.floor(g),
-			sketch.floor(b)
-		);
+	if(lastSecond !== second()) {
+		lastSecond = second();
+    }
+
+
+var hourCount = function(a) {
+	for (var i = 0; i < hour(); i++){
+		strokeWeight(0.5);
+		stroke(0,180, 255,500+i);
+		fill(30,255, 255,0);
+		ellipse(400, 310, 4 * i + 535, 4*i + 535);
 	};
+}
 
+hourCount();
 
-	function mousePressed() {
-		var isFullscreen = sketch.fullscreen();
-		sketch.fullscreen(!isFullscreen);
+	var minuteCount = function(b) {
+		for (var i = 0; i < minute(); i++){
+			strokeWeight(1);
+			stroke(0,180, 255,500+i);
+			fill(255,00,20,0);
+			ellipse(400, 310, 7*i + 120, 7*i +120);
+		};
 	}
 
+	minuteCount();
 
-	function windowResized() {
-		sketch.resizeCanvas(sketch.windowWidth, sketch.windowHeight);
+
+	var secondCount = function(c) {
+		for (var i = 0; i < second(); i++){
+			strokeWeight(0.25);
+			stroke(0,180, 255,500+i);
+			fill(90,90,200, 0);
+			ellipse(400, 310, 1 + 2*i, 1 + 2*i);
+		};
 	}
 
-	/**
-   * Same as `function setup() {}` before, but written a different way
-   * using our namespace.
-   */
-	sketch.setup = function() {
-		sketch.createCanvas(sketch.windowWidth, sketch.windowHeight);
-		lastSecond = sketch.second();
-		c = getRandomColor();
-	}
+secondCount();
 
-	/**
-   * Same as `function setup() {}` before, but written a different way
-   * using our namespace.
-   */
-	sketch.draw = function() {
-		sketch.background(0,0,0);
-
-		if(sketch.lastSecond !== sketch.second()) {
-			sketch.lastSecond = sketch.second();
-			c = getRandomColor();
-		}
-
-		sketch.fill(c);
-		// random rect
-		sketch.rect(
-			sketch.minute(),
-			sketch.second(),
-			sketch.day()+sketch.hour(),
-			sketch.month()+sketch.hour()
-		);
-
-		sketch.textSize(20);
-		sketch.fill(255,255,255);
-		sketch.noStroke();
-		sketch.text(sketch.hour()+":"+sketch.minute()+":"+sketch.second(), 10, sketch.windowHeight-10);
-	}
+if (second() % 2 === 0) {
+	secondCount();
+}
 
 
-});
+	textAlign(LEFT);
+	textSize(25);
+	fill(255,255,255,255);
+	noStroke();
+	textFont("Garamond");
+	textStyle(BOLD)
+	text("___" + hour()+"", 405 , windowHeight-570, fill(255,0,255,255));
+  text("___" + minute()+"",405, windowHeight-390, fill(255,0,255,255));
+  text("___" +second()+"",405, windowHeight-300, fill(255,0,255,255));
+
+	textSize(9);
+	textStyle(ITALIC);
+	text("SEC",405, windowHeight-300, fill(255,0,255,255));
+	text("MIN",405, windowHeight-390, fill(255,0,255,255));
+	text("HOUR", 405 , windowHeight-570, fill(255,0,255,255));
+
+	/*function getRandomPosition(element) {
+		var x = document.body.offsetHeight-element.windowHeight;
+		var y = document.body.offsetWidth-element.windowWidth;
+		var randomX = Math.floor(Math.random()*x);
+		var randomY = Math.floor(Math.random()*y);
+		return [randomX,randomY];
+	}*/
+
+}
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
