@@ -1,9 +1,7 @@
 var lastSecond;
-var lastMillis;
-var randomX;
-var randomY;
-var x;
-var y;
+var hourCount;
+var minuteCount;
+var secondCount;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -16,42 +14,67 @@ function draw() {
 
 	background(255,255,255);
 
+
+
 	if(lastSecond !== second()) {
 		lastSecond = second();
     }
 
-  for (var i = 0; i < hour(); i++){
-		strokeWeight(10);
-		stroke(0,255, 255,500+i);
-		fill(30,20, 255,0);
-    ellipse(50, 320, 50 * i + 5, 50*i + 5);
 
-  };
+var hourCount = function(a) {
+	for (var i = 0; i < hour(); i++){
+		strokeWeight(0.5);
+		stroke(0,180, 255,500+i);
+		fill(30,255, 255,0);
+		ellipse(400, 310, 4 * i + 535, 4*i + 535);
+	};
+}
 
-  for (var i = 0; i < minute(); i++){
-		strokeWeight(5);
-		stroke(255,255,0,500 + i);
-		fill(255,10,20,0);
-    ellipse(50, 320, 20*i + 5, 20*i +5);
-  };
+hourCount();
 
-  for (var i = 0; i < second(); i++){
-		//fill(255,255,20,15);
-		strokeWeight(1);
-		stroke(255,0,255,500 + i);
-		fill(255,255,255, 0);
-    ellipse(50, 320, 5 + 20* i, 5 + 20* i);
-  };
+	var minuteCount = function(b) {
+		for (var i = 0; i < minute(); i++){
+			strokeWeight(1);
+			stroke(0,180, 255,500+i);
+			fill(255,00,20,0);
+			ellipse(400, 310, 7*i + 120, 7*i +120);
+		};
+	}
 
-	textAlign(CENTER);
-	textSize(10);
+	minuteCount();
+
+
+	var secondCount = function(c) {
+		for (var i = 0; i < second(); i++){
+			strokeWeight(0.25);
+			stroke(0,180, 255,500+i);
+			fill(90,90,200, 0);
+			ellipse(400, 310, 1 + 2*i, 1 + 2*i);
+		};
+	}
+
+secondCount();
+
+if (second() % 2 === 0) {
+	secondCount();
+}
+
+
+	textAlign(LEFT);
+	textSize(25);
 	fill(255,255,255,255);
 	noStroke();
-	textFont("Futura");
-	textStyle(ITALIC)
-	text(hour()+"", 100, windowHeight-460, fill(0));
-  text(minute()+"",100, windowHeight-280, fill(0));
-  text(second()+"",100, windowHeight-65, fill(0));
+	textFont("Garamond");
+	textStyle(BOLD)
+	text("___" + hour()+"", 405 , windowHeight-570, fill(255,0,255,255));
+  text("___" + minute()+"",405, windowHeight-390, fill(255,0,255,255));
+  text("___" +second()+"",405, windowHeight-300, fill(255,0,255,255));
+
+	textSize(9);
+	textStyle(ITALIC);
+	text("SEC",405, windowHeight-300, fill(255,0,255,255));
+	text("MIN",405, windowHeight-390, fill(255,0,255,255));
+	text("HOUR", 405 , windowHeight-570, fill(255,0,255,255));
 
 	/*function getRandomPosition(element) {
 		var x = document.body.offsetHeight-element.windowHeight;
@@ -61,18 +84,6 @@ function draw() {
 		return [randomX,randomY];
 	}*/
 
-	/*if(lastMillis !== millis()){
-		lastMillis = millis();
-		};
-
-		for (var i = 0; i < millis(); i++){
-			if(lastMillis < 1001){
-			fill(150);
-			ellipse(randomX, randomY, 80, 80)
-		}else{
-
-		}
-	};*/
 }
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
