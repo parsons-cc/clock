@@ -31,7 +31,7 @@ You will also be graded on overall execution.
 
 ## Project Setup
 
-For basic functionality you can just open index.html in your browser! If you want to do things like load images, video, or sound then you might want to use the local server instructions below.
+For basic functionality you can just double-click on `index.html` and open in your browser (Chrome is preferred). If you want to do things like load images, video, or sound or other advanced p5 features then you might want to use the local server instructions below.
 
 ### Local server
 
