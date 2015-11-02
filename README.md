@@ -22,7 +22,9 @@ Your finished project will be evaluated using following questions:
   * 2 of them should be "blue sky" ideas that you don't necessarily know how to do
   * Each concept should include images and text, but you can document them however you prefer (photos of hand-written notes, mockups in Photoshop, a [Pinterest](http://pinterest.com/) site with annotated images, etc.).
   * Please indicate which concepts are the "blue sky" ones and which is the more attainable one.
- 2. Pick one of the "blue sky" ideas and research how you might make it a reality. Document your research and submit it before class.
+ 2. Pick one of the "blue sky" ideas and research how you might make it a reality. Document your research with your own notes about how you _might_ make it happen.
+
+Part 1 of this assignment can be submitted via your class Google doc.
 
 ### Part 2: Prototyping (Due 11/13)
  
@@ -35,11 +37,15 @@ Your finished project will be evaluated using following questions:
 
 You can [download this project here](https://github.com/parsons-cc/timepiece/archive/gh-pages.zip) to get started!
 
+Part 2 of this assignment can be submitted via public link, email, or Google Drive.
+
 ### Part 3: Execution (Due 11/20)
 
 Continue the work of your prototype to finish your project. You may want to change your final product based on the prototype, which is totally fine. The goal is to stay true to your original idea but also be able to finish it in time.
 
-We will review and critique the final projects in class. Keep in mind that you should have uploaded the final project to your class site by the time class starts. Good luck!
+We will review and critique the final projects in class. Good luck!
+
+Part 3 of this assigment may be submitted via public link.
 
 ### Resources
 
