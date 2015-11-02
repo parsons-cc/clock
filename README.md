@@ -22,7 +22,7 @@ Your finished project will be evaluated using following questions:
   * 2 of them should be "blue sky" ideas that you don't necessarily know how to do
   * Each concept should include images and text, but you can document them however you prefer (photos of hand-written notes, mockups in Photoshop, a [Pinterest](http://pinterest.com/) site with annotated images, etc.).
   * Please indicate which concepts are the "blue sky" ones and which is the more attainable one.
- 2. Pick one of the two "blue sky" ideas and research how you might execute it. Write this research up in a document. You do not necessarily need to write code here, but you should provide links to examples, documentation, images, etc.
+ 2. Pick one of the "blue sky" ideas and research how you might make it a reality. Document your research and submit it before class.
 
 ### Part 2: Prototyping (Due 11/13)
  
