@@ -15,7 +15,7 @@ Your finished project will be evaluated using following questions:
  5. Does it demonstrate change over time?
  6. Was it executed well overall?
 
-## Part 1: Design (Due 11/6)
+### Part 1: Design (Due 11/6)
 
  1. Sketch out **3** different concepts of a composition for the browser that demonstrates the "change over time"
   * 1 of them should be something that you think is reasonably attainable based on what you already know
@@ -24,7 +24,7 @@ Your finished project will be evaluated using following questions:
   * Please indicate which concepts are the "blue sky" ones and which is the more attainable one.
  2. Pick one of the two "blue sky" ideas and research how you might execute it. Write this research up in a document. You do not necessarily need to write code here, but you should provide links to examples, documentation, images, etc.
 
-## Part 2: Prototyping (Due 11/13)
+### Part 2: Prototyping (Due 11/13)
  
  1. Select one of the concepts to move forward on.
  2. Next, think about what you will need to do to make your idea happen. Make a list of the steps you think you'll have to take. You might not have a very good idea yet or the list might change, but this is a start.
@@ -35,7 +35,7 @@ Your finished project will be evaluated using following questions:
 
 You [Download this project here](https://github.com/parsons-cc/timepiece/archive/gh-pages.zip) to get started!
 
-## Part 3: Execution (Due 11/20)
+### Part 3: Execution (Due 11/20)
 
 We will review and critique the final projects in class. Keep in mind that you should have uploaded the final project to your class site by the time class starts. Good luck!
 
