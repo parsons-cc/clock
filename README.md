@@ -27,15 +27,17 @@ Your finished project will be evaluated using following questions:
 ### Part 2: Prototyping (Due 11/13)
  
  1. Select one of the concepts to move forward on.
- 2. Next, think about what you will need to do to make your idea happen. Make a list of the steps you think you'll have to take. You might not have a very good idea yet or the list might change, but this is a start.
+ 2. Next, think about what you will need to do to make your idea happen. Make a list of the steps you think you'll have to take.
  3. Pick the most difficult thing on your list, and attempt to build it in the simplest way you can imagine.
-  * It necessarily need to look anything like your final product -- it can be a different size, it can use different content, it can be really, really ugly. But it should explore this question: _how could I build this?_.
+  * It doesn't need to look like your final product -- it can be a different size, it can use different content, it can be really, really ugly. But it should explore this question: _how could I build this?_.
   * Pay careful attention not only to what you are trying to build, but what you are intentionally _leaving out_. A good prototype should only include the bare minimum when you start.
   * If it turns out that your first step was easier than you thought, celebrate and move on to the next one! If it turns out to be even harder, think about how you might break it down into simpler parts.
 
-You [Download this project here](https://github.com/parsons-cc/timepiece/archive/gh-pages.zip) to get started!
+You can [download this project here](https://github.com/parsons-cc/timepiece/archive/gh-pages.zip) to get started!
 
 ### Part 3: Execution (Due 11/20)
+
+Continue the work of your prototype to finish your project. You may want to change your final product based on the prototype, which is totally fine. The goal is to stay true to your original idea but also be able to finish it in time.
 
 We will review and critique the final projects in class. Keep in mind that you should have uploaded the final project to your class site by the time class starts. Good luck!
 
